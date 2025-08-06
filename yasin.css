@@ -1,0 +1,17 @@
+/* External CSS */
+.card {
+  border: 2px solid gray;
+  padding: 20px;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  border: 3px solid darkgreen;
+}

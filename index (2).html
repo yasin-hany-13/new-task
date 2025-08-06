@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مرتبتي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #ddd;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    nav button {
+      flex: 1;
+      padding: 15px;
+      border: none;
+      background-color: #ddd;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #bbb;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      margin-bottom: 60px; /* مساحة لقائمة التنقل */
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #4CAF50;
+    }
+
+    ul {
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>مرتبتي – الراحة تبدأ من هنا</header>
+
+  <section id="home" class="active">
+    <h2>مرحبا بك!</h2>
+    <p>في هذا التطبيق ستتعرف على أنواع المراتب، نصائح الشراء ،ت.</p>
+  </section>
+
+  <section id="types">
+    <h2>أنواع المراتب</h2>
+    <ul>
+      <li>مرتبة سوست متصلة</li>
+      <li>مرتبة سوست منفصلة</li>
+      <li>مرتبة اسفنج مضغوط</li>
+      <li>مرتبة طبية</li>
+    </ul>
+  </section>
+
+  <section id="tips">
+    <h2>نصائح عند الشراء</h2>
+    <ul>
+      <li>جرب المرتبة بنفسك قبل الشراء</li>
+      <li>تأكد من وجود ضمان</li>
+      <li>اختر حجم يناسب السرير</li>
+    </ul>
+  </section>
+
+  <section id="brands">
+    <h2>أفضل الشركات</h2>
+    <ul>
+      <li><strong>هارت سليب</strong>: مصنع ا/هاني كساب  منذ 2019 – ثقة وجودة عالية.</li>
+    </ul>
+  </section>
+
+  <section id="heartsleep">
+    <h2>عن هارت سليب</h2>
+    <p><strong>هارت سليب</strong> هو مصنع متخصص في إنتاج المراتب بجودة عالية، أُسِّس سنة <strong>2019</strong> بواسطة والدي.</p>
+    <p>نحن نتميز بالاعتماد على خامات ممتازة، وتصميمات مريحة تدعم العمود الفقري وتناسب كل الأعمار.</p>
+    <ul>
+      <li>العنوان: مصر – شبين القناطر-القليوبيه-كفر طحا [اكتب عنوان المصنع هنا]</li>
+      <li>الهاتف:01226579237<li>
+      <li>فيسبوك: <a href="#" target="_blank">صفحتنا على فيسبوك</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>اتصل بنا</h2>
+    <p>للاستفسار أو الحجز، اتصل على: 01226579237</p>
+  </section>
+
+  <nav>
+    <button onclick="showSection('home')">الرئيسية</button>
+    <button onclick="showSection('types')">الأنواع</button>
+    <button onclick="showSection('tips')">نصائح</button>
+    <button onclick="showSection('brands')">الشركات</button>
+    <button onclick="showSection('heartsleep')">هارت سليب</button>
+    <button onclick="showSection('contact')">اتصل بنا</button>
+  </nav>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

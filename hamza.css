@@ -1,0 +1,22 @@
+body {
+  font-family: 'Cairo', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  color: #5a6d80;
+}
+
+p {
+  font-size: 18px;
+  color: rgb(0, 0, 80);
+}
+
+a {
+  color: #009900;
+}
+
+q {
+  font-style: italic;
+  font-weight: bold;
+}
