@@ -57,7 +57,6 @@ textarea {
   outline: none;
   resize: none;
   font-size: 14px;
-  margin-bottom: 20px;
 }
 
 /* زر الإرسال */
@@ -69,7 +68,6 @@ button {
   background: #ff3366;
   color: white;
   font-size: 14px;
-  transition: 0.3s;
 }
 
 button:hover {
